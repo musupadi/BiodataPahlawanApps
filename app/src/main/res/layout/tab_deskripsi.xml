@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About.TabDetail"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/vintagecard"
+    android:paddingTop="30dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="30dp">
+    <ScrollView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/Deskripsi"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/about_supriyadi"
+            android:gravity="center" />
+    </ScrollView>
+
+</RelativeLayout>

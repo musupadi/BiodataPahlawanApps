@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SkripsiApps</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="base_url">http://192.168.0.3/BiodataPahlawan/</string>
+    <string name="about_supriyadi">Saya adalah seorang Full Stack Freelance Programmer untuk Platform Android,Desktop dan Web
+        Saya juga Seorang Mahasiswa Semester 8 di Universitas Indrapasta PGRI, Aplikasi ini dibuat untuk memenuhi tugas KKP dari
+        Kampus Kami dan juga untuk mempermudah manajemen raport pada sekolah.
+    </string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="about">About Developer</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
