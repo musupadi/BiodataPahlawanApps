@@ -55,6 +55,8 @@ public class DashboardActivity extends AppCompatActivity
         final String Detail = data.getStringExtra("Detail");
         final String Lahir = data.getStringExtra("Lahir");
         final String Wafat = data.getStringExtra("Wafat");
+        final String Langitude = data.getStringExtra("Lang");
+        final String Longitude = data.getStringExtra("Long");
         if (List !=null){
             Bundle bundle = new Bundle();
             bundle.putString("LIST",List);
@@ -79,6 +81,8 @@ public class DashboardActivity extends AppCompatActivity
             bundle.putString("Detail",Detail);
             bundle.putString("Lahir",Lahir);
             bundle.putString("Wafat",Wafat);
+            bundle.putString("Lang",Langitude);
+            bundle.putString("Long",Longitude);
             fragment = new DetailPahlawan();
             fragment.setArguments(bundle);
         }
@@ -111,7 +115,9 @@ public class DashboardActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_login) {
+            return true;
+        }else if(id == R.id.action_signup){
             return true;
         }
 

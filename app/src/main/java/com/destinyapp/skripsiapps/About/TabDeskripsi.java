@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.destinyapp.skripsiapps.R;
@@ -39,6 +40,12 @@ public class TabDeskripsi extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         deskripsi = (TextView)view.findViewById(R.id.Deskripsi);
         final MediaPlayer SuaraMe = MediaPlayer.create(getActivity(),R.raw.sherisingshieldhero);
+        deskripsi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"Tekan Untuk Mendengarkan Deskripsi Saya",Toast.LENGTH_SHORT).show();
+            }
+        });
         deskripsi.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {

@@ -73,6 +73,8 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
                 goInput.putExtra("Detail",getListPahlawan().get(position).getDetail());
                 goInput.putExtra("Lahir",getListPahlawan().get(position).getLahir());
                 goInput.putExtra("Wafat",getListPahlawan().get(position).getWafat());
+                goInput.putExtra("Lang",getListPahlawan().get(position).getLangitude());
+                goInput.putExtra("Long",getListPahlawan().get(position).getLongitude());
                 context.startActivities(new Intent[]{goInput});
             }
         }));

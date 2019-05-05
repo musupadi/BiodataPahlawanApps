@@ -1,6 +1,7 @@
 package com.destinyapp.skripsiapps.Pahlawan;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.destinyapp.skripsiapps.DashboardActivity;
+import com.destinyapp.skripsiapps.Maps.MapsActivity;
 import com.destinyapp.skripsiapps.R;
 
 /**
@@ -22,7 +25,7 @@ public class DetailPahlawan extends Fragment {
 
     ImageView photo;
     TextView nama,remarks,lahir,wafat,detail;
-    Button Favorite,Share;
+    Button Favorite,Makam;
 
     public DetailPahlawan() {
         // Required empty public constructor
@@ -46,6 +49,8 @@ public class DetailPahlawan extends Fragment {
         final String Detail = this.getArguments().getString("Detail").toString();
         final String Lahir = this.getArguments().getString("Lahir").toString();
         final String Wafat = this.getArguments().getString("Wafat").toString();
+        final String Langitude = this.getArguments().getString("Lang").toString();
+        final String Longitude = this.getArguments().getString("Long").toString();
         //Done
 
         //Deklarasi Variabel
@@ -55,8 +60,27 @@ public class DetailPahlawan extends Fragment {
         detail = (TextView)view.findViewById(R.id.tvDetail);
         lahir = (TextView)view.findViewById(R.id.tvLahir);
         wafat = (TextView)view.findViewById(R.id.tvWafat);
+        Makam = (Button)view.findViewById(R.id.btn_set_share);
         //Done
         getData(Nama,Remarks,Photo,Detail,Lahir,Wafat);
+        Makam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getDataMap(Nama,Remarks,Photo,Detail,Lahir,Wafat,Langitude,Longitude);
+            }
+        });
+    }
+    private void getDataMap(String Nama,String Remarks,String Photo,String Detail,String Lahir,String Wafat,String Langitude,String Longitude){
+        Intent goInput = new Intent(getActivity(), MapsActivity.class);
+        goInput.putExtra("Nama",Nama);
+        goInput.putExtra("Remarks",Remarks);
+        goInput.putExtra("Photo",Photo);
+        goInput.putExtra("Detail",Detail);
+        goInput.putExtra("Lahir",Lahir);
+        goInput.putExtra("Wafat",Wafat);
+        goInput.putExtra("Lang",Langitude);
+        goInput.putExtra("Long",Longitude);
+        getActivity().startActivities(new Intent[]{goInput});
     }
     private void getData(String Nama,String Remarks,String Photo,String Detail,String Lahir,String Wafat){
         nama.setText(Nama);
