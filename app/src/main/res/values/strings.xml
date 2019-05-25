@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">SkripsiApps</string>
-    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="app_name">Biodata Pahlawan</string>
+    <string name="title_activity_dashboard">Biodata Pahlawan</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Muhammad Supriyadi</string>
+    <string name="nav_header_subtitle">musupadi159@gamail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_login">Login</string>
     <string name="action_register">Register</string>
@@ -21,10 +21,11 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="favorite">Favorite</string>
-    <string name="share">Share</string>
+    <string name="share">Makam</string>
     <string name="about">About Developer</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Makam Pahlawan</string>
 </resources>

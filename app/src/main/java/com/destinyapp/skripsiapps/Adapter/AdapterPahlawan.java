@@ -16,6 +16,8 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.destinyapp.skripsiapps.DashboardActivity;
+import com.destinyapp.skripsiapps.Maps.MapsActivity;
+import com.destinyapp.skripsiapps.Model.ModelPahlawan;
 import com.destinyapp.skripsiapps.R;
 
 import java.util.ArrayList;
@@ -42,7 +44,7 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
 
     @Override
     public void onBindViewHolder(@NonNull CardViewViewHolder cardViewViewHolder, int i) {
-        ModelPahlawan p = getListPahlawan().get(i);
+        final ModelPahlawan p = getListPahlawan().get(i);
         Glide.with(context)
                 .load(p.getPhoto())
                 .apply(new RequestOptions().override(350, 550))
@@ -58,7 +60,16 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
         cardViewViewHolder.btnShare.setOnClickListener(new CustomOnItemClickListener(i, new CustomOnItemClickListener.OnItemClickCallback() {
             @Override
             public void onItemClicked(View view, int position) {
-                Toast.makeText(context, "Share "+getListPahlawan().get(position).getNama(), Toast.LENGTH_SHORT).show();
+                Intent goInput = new Intent(context, MapsActivity.class);
+                goInput.putExtra("Nama",p.getNama());
+                goInput.putExtra("Remarks",p.getRemarks());
+                goInput.putExtra("Photo",p.getPhoto());
+                goInput.putExtra("Detail",p.getDetail());
+                goInput.putExtra("Lahir",p.getLahir());
+                goInput.putExtra("Wafat",p.getWafat());
+                goInput.putExtra("Lang",p.getLangitude());
+                goInput.putExtra("Long",p.getLongitude());
+                context.startActivities(new Intent[]{goInput});
             }
         }));
         cardViewViewHolder.layoutCardView.setOnClickListener(new CustomOnItemClickListener(i, new CustomOnItemClickListener.OnItemClickCallback() {
@@ -72,6 +83,8 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
                 goInput.putExtra("Detail",getListPahlawan().get(position).getDetail());
                 goInput.putExtra("Lahir",getListPahlawan().get(position).getLahir());
                 goInput.putExtra("Wafat",getListPahlawan().get(position).getWafat());
+                goInput.putExtra("Lang",getListPahlawan().get(position).getLangitude());
+                goInput.putExtra("Long",getListPahlawan().get(position).getLongitude());
                 context.startActivities(new Intent[]{goInput});
             }
         }));

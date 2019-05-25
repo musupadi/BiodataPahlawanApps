@@ -1,6 +1,5 @@
 package com.destinyapp.skripsiapps;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -24,7 +23,7 @@ import com.destinyapp.skripsiapps.Pahlawan.ListPahlawan;
 
 public class DashboardActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    Dialog myDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +40,6 @@ public class DashboardActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         Fragment fragment = new DashboardFragment();
         Intent data = getIntent();
-        myDialog = new Dialog(this);
         //IF ELSE
         String List = data.getStringExtra("LIST");
         String Data = data.getStringExtra("DATA");
@@ -57,6 +55,8 @@ public class DashboardActivity extends AppCompatActivity
         final String Detail = data.getStringExtra("Detail");
         final String Lahir = data.getStringExtra("Lahir");
         final String Wafat = data.getStringExtra("Wafat");
+        final String Langitude = data.getStringExtra("Lang");
+        final String Longitude = data.getStringExtra("Long");
         if (List !=null){
             Bundle bundle = new Bundle();
             bundle.putString("LIST",List);
@@ -81,6 +81,8 @@ public class DashboardActivity extends AppCompatActivity
             bundle.putString("Detail",Detail);
             bundle.putString("Lahir",Lahir);
             bundle.putString("Wafat",Wafat);
+            bundle.putString("Lang",Langitude);
+            bundle.putString("Long",Longitude);
             fragment = new DetailPahlawan();
             fragment.setArguments(bundle);
         }
@@ -114,13 +116,8 @@ public class DashboardActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_login) {
-            myDialog.setContentView(R.layout.layout_dialog_login);
-            myDialog.show();
             return true;
-        }else if(id == R.id.action_register){
-            myDialog.setContentView(R.layout.layout_dialog_register);
-            return true;
-        }else if(id == R.id.action_logout){
+        }else if(id == R.id.action_signup){
             return true;
         }
 
