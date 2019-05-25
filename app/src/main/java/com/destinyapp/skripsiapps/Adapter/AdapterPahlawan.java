@@ -16,7 +16,6 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.destinyapp.skripsiapps.DashboardActivity;
-import com.destinyapp.skripsiapps.Model.ModelPahlawan;
 import com.destinyapp.skripsiapps.R;
 
 import java.util.ArrayList;

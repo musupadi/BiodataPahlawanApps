@@ -1,5 +1,6 @@
 package com.destinyapp.skripsiapps;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -23,7 +24,7 @@ import com.destinyapp.skripsiapps.Pahlawan.ListPahlawan;
 
 public class DashboardActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    Dialog myDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,7 @@ public class DashboardActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         Fragment fragment = new DashboardFragment();
         Intent data = getIntent();
+        myDialog = new Dialog(this);
         //IF ELSE
         String List = data.getStringExtra("LIST");
         String Data = data.getStringExtra("DATA");
@@ -111,7 +113,14 @@ public class DashboardActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_login) {
+            myDialog.setContentView(R.layout.layout_dialog_login);
+            myDialog.show();
+            return true;
+        }else if(id == R.id.action_register){
+            myDialog.setContentView(R.layout.layout_dialog_register);
+            return true;
+        }else if(id == R.id.action_logout){
             return true;
         }
 

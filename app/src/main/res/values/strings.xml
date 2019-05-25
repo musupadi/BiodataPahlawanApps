@@ -6,7 +6,9 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+    <string name="action_logout">Logout</string>
     <string name="base_url">http://192.168.0.3/BiodataPahlawan/</string>
     <string name="about_supriyadi">Saya adalah seorang Full Stack Freelance Programmer untuk Platform Android,Desktop dan Web
         Saya juga Seorang Mahasiswa Semester 8 di Universitas Indrapasta PGRI, Aplikasi ini dibuat untuk memenuhi tugas KKP dari
