@@ -14,6 +14,8 @@
         Saya juga Seorang Mahasiswa Semester 8 di Universitas Indrapasta PGRI, Aplikasi ini dibuat untuk memenuhi tugas KKP dari
         Kampus Kami dan juga untuk mempermudah manajemen raport pada sekolah.
     </string>
+    <string name="koneksi_gagal">Koneksi Gagal Harap Dicoba lagi lain kali</string>
+    <string name="data_error">Terjadi kesalahan... harap hubungi Developer</string>
     <string name="menu_dashboard">Dashboard</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>

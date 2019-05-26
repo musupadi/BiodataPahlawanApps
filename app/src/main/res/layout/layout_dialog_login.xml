@@ -61,15 +61,5 @@
         android:text="Login"
         android:background="@drawable/vintage"
         android:layout_marginBottom="20dp"/>
-    <Button
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/btnRegister"
-        android:text="Register"
-        android:background="@drawable/vintagecard"/>
-
-
 
 </LinearLayout>

@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.destinyapp.skripsiapps.Adapter.AdapterPahlawan;
+import com.destinyapp.skripsiapps.Model.ModelPahlawan;
+import com.destinyapp.skripsiapps.Model.PahlawanData;
 import com.destinyapp.skripsiapps.R;
 
 import java.util.ArrayList;
