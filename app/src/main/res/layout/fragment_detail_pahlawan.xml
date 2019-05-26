@@ -8,8 +8,8 @@
     android:background="@drawable/vintage_background">
 
     <android.support.v7.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginRight="8dp"
@@ -17,27 +17,27 @@
         card_view:cardCornerRadius="4dp"
         android:layout_weight="2">
 
-        <RelativeLayout
+        <LinearLayout
             android:background="@drawable/vintage"
             android:padding="5dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             >
 
             <ImageView
                 android:id="@+id/ivPhoto"
-                android:layout_width="150dp"
-                android:layout_height="220dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginBottom="4dp"
                 android:scaleType="centerCrop"
-                tools:src="@color/colorAccent" />
+                tools:src="@color/colorAccent"
+                android:layout_weight="1.5"/>
 
 
             <LinearLayout
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
-                android:layout_toRightOf="@+id/ivPhoto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -136,13 +136,10 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         tools:text="22-Jan"/>
-
-
                 </LinearLayout>
-
             </LinearLayout>
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
