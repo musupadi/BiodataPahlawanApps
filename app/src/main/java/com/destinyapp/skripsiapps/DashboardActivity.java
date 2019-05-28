@@ -103,7 +103,6 @@ public class DashboardActivity extends AppCompatActivity
         String Musik = data.getStringExtra("MUSIK");
         String DetailExtra = data.getStringExtra("DetailExtra");
         final String Nama = data.getStringExtra("Nama");
-
         final String Remarks = data.getStringExtra("Remarks");
         final String Photo = data.getStringExtra("Photo");
         final String Detail = data.getStringExtra("Detail");
