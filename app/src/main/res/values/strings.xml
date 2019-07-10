@@ -6,12 +6,16 @@
     <string name="nav_header_title">Muhammad Supriyadi</string>
     <string name="nav_header_subtitle">musupadi159@gamail.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+    <string name="action_logout">Logout</string>
     <string name="base_url">http://192.168.0.3/BiodataPahlawan/</string>
     <string name="about_supriyadi">Saya adalah seorang Full Stack Freelance Programmer untuk Platform Android,Desktop dan Web
         Saya juga Seorang Mahasiswa Semester 8 di Universitas Indrapasta PGRI, Aplikasi ini dibuat untuk memenuhi tugas KKP dari
         Kampus Kami dan juga untuk mempermudah manajemen raport pada sekolah.
     </string>
+    <string name="koneksi_gagal">Koneksi Gagal Harap Dicoba lagi lain kali</string>
+    <string name="data_error">Terjadi kesalahan... harap hubungi Developer</string>
     <string name="menu_dashboard">Dashboard</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>

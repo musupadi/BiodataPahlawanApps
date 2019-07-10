@@ -1,6 +1,7 @@
 package com.destinyapp.skripsiapps.Pahlawan;
 
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -14,8 +15,11 @@ import android.widget.Toast;
 
 import com.destinyapp.skripsiapps.Adapter.AdapterPahlawan;
 import com.destinyapp.skripsiapps.Model.ModelPahlawan;
+import com.destinyapp.skripsiapps.Model.Pahlawan;
 import com.destinyapp.skripsiapps.Model.PahlawanData;
 import com.destinyapp.skripsiapps.R;
+import com.destinyapp.skripsiapps.SharedPreferance.DB_Helper;
+import com.destinyapp.skripsiapps.SharedPreferance.PahlawanAdapter;
 
 import java.util.ArrayList;
 
@@ -25,6 +29,7 @@ import java.util.ArrayList;
 public class ListPahlawan extends Fragment {
     private RecyclerView rvCategory;
     private ArrayList<ModelPahlawan> pList = new ArrayList<>();
+    DB_Helper dbHelper;
 
     public ListPahlawan() {
         // Required empty public constructor
@@ -41,11 +46,9 @@ public class ListPahlawan extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         //Variable
         rvCategory = (RecyclerView)view.findViewById(R.id.recycler);
         //Done
-
         //getArguments
         final String List = this.getArguments().getString("LIST").toString();
         final String Data = this.getArguments().getString("DATA").toString();
@@ -56,6 +59,12 @@ public class ListPahlawan extends Fragment {
             AdapterPahlawan cardViewPresidentAdapter = new AdapterPahlawan(getActivity());
             cardViewPresidentAdapter.setListPahlawan(pList);
             rvCategory.setAdapter(cardViewPresidentAdapter);
+        }else if(Data.equals("All")){
+            rvCategory.setHasFixedSize(true);
+            dbHelper = new DB_Helper(getActivity());
+            rvCategory.setLayoutManager(new LinearLayoutManager(getActivity()));
+            PahlawanAdapter pahlawanAdapter = new PahlawanAdapter(dbHelper.pahlawankuList(),getActivity(),rvCategory);
+            rvCategory.setAdapter(pahlawanAdapter);
         }
 
     }

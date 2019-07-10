@@ -29,12 +29,12 @@
                     android:layout_height="286dp"
                     android:src="@color/pureBlack"
                     android:alpha="0.5"/>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
+                    android:gravity="center"
+                    android:orientation="vertical">
 
 
                 </LinearLayout>
@@ -65,7 +65,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical"
-                                android:background="@drawable/vintagecard">
+                                android:background="@color/colorPrimary">
                                 <RelativeLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -74,13 +74,19 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:orientation="vertical"
+                                        android:padding="5dp"
                                         >
+                                        <ImageView
+                                            android:src="@drawable/biodata"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"/>
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:text="List Biodata Pahlawan"
+                                            android:text="Biodata Pahlawan"
+                                            android:gravity="center|top"
                                             android:textSize="16sp"
-                                            android:gravity="center"
                                             android:layout_weight="1"/>
                                     </LinearLayout>
                                     <Button
@@ -115,14 +121,20 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:orientation="vertical"
-                                        android:background="@drawable/vintagecard"
+                                        android:background="@color/colorPrimary"
+                                        android:padding="5dp"
                                         >
+                                        <ImageView
+                                            android:src="@drawable/search"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"/>
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:text="Mencari Biodata Pahlawan"
+                                            android:text="Cari Pahlawan"
                                             android:textSize="16sp"
-                                            android:gravity="center"
+                                            android:gravity="top|center"
                                             android:layout_weight="1"/>
                                     </LinearLayout>
                                     <Button
@@ -164,14 +176,20 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:orientation="vertical"
-                                        android:background="@drawable/vintagecard"
+                                        android:background="@color/colorPrimary"
+                                        android:padding="5dp"
                                         >
+                                        <ImageView
+                                            android:src="@drawable/favorite"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:text="Pahlawan Favorit Saya"
                                             android:textSize="16sp"
-                                            android:gravity="center"
+                                            android:gravity="top|center"
                                             android:layout_weight="1"/>
                                     </LinearLayout>
                                     <Button
@@ -206,14 +224,20 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:orientation="vertical"
-                                        android:background="@drawable/vintagecard"
+                                        android:background="@color/colorPrimary"
+                                        android:padding="5dp"
                                         >
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:src="@drawable/quiz"/>
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:text="Kuis Pahlawan"
                                             android:textSize="16sp"
-                                            android:gravity="center"
+                                            android:gravity="top|center"
                                             android:layout_weight="1"/>
                                     </LinearLayout>
                                     <Button
@@ -253,14 +277,20 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:orientation="vertical"
-                                        android:background="@drawable/vintagecard"
+                                        android:background="@color/colorPrimary"
+                                        android:padding="5dp"
                                         >
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/highscore"
+                                            android:layout_weight="1"/>
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:text="High Score Kuis"
                                             android:textSize="16sp"
-                                            android:gravity="center"
+                                            android:gravity="top|center"
                                             android:layout_weight="1"/>
                                     </LinearLayout>
                                     <Button
@@ -273,45 +303,7 @@
                             </LinearLayout>
 
                         </android.support.v7.widget.CardView>
-                        <android.support.v7.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="4dp"
-                            android:layout_marginRight="8dp"
-                            android:layout_marginBottom="4dp"
-                            card_view:cardCornerRadius="4dp"
-                            >
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-                                <RelativeLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center">
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:background="@drawable/vintagecard">
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:text="Musik Nasional"
-                                            android:textSize="16sp"
-                                            android:gravity="center"
-                                            android:layout_weight="1"/>
-                                    </LinearLayout>
-                                    <Button
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:id="@+id/btnMusikNasional"
-                                        android:background="@android:color/transparent"/>
-                                </RelativeLayout>
-                            </LinearLayout>
-                        </android.support.v7.widget.CardView>
+
                     </LinearLayout>
 
                 </LinearLayout>
