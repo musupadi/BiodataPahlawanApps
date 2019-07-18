@@ -122,9 +122,9 @@ public class DashboardActivity extends AppCompatActivity
         }else if(Favorite !=null){
             fragment = new CariPahlawan();
         }else if(Kuis !=null){
-            fragment = new CariPahlawan();
+            fragment = new KuisFragment();
         }else if(Highscore !=null){
-            fragment = new CariPahlawan();
+            fragment = new HighScoreFragment();
         }else if(Musik !=null){
             fragment = new CariPahlawan();
         }else if(DetailExtra !=null){

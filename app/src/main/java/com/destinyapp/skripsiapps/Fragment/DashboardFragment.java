@@ -41,10 +41,9 @@ public class DashboardFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         list = (Button)view.findViewById(R.id.btnBiodata);
-        cari = (Button)view.findViewById(R.id.btnCariBiodata);
+
         favorite = (Button)view.findViewById(R.id.btnFavoriteSaya);
         highscore = (Button)view.findViewById(R.id.btnHighScore);
-
         kuis = (Button)view.findViewById(R.id.btnKuis);
 
 
@@ -58,14 +57,14 @@ public class DashboardFragment extends Fragment {
                 getActivity().startActivities(new Intent[]{goInput});
             }
         });
-        cari.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goInput = new Intent(getActivity(), DashboardActivity.class);
-                goInput.putExtra("CARI","mencari");
-                getActivity().startActivities(new Intent[]{goInput});
-            }
-        });
+//        cari.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent goInput = new Intent(getActivity(), DashboardActivity.class);
+//                goInput.putExtra("CARI","mencari");
+//                getActivity().startActivities(new Intent[]{goInput});
+//            }
+//        });
         favorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

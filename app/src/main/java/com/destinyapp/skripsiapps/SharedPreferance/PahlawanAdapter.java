@@ -160,13 +160,7 @@ public class PahlawanAdapter extends RecyclerView.Adapter<PahlawanAdapter.ViewHo
                 mContext.startActivities(new Intent[]{goInput});
             }
         });
-
-
     }
-
-
-
-
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override

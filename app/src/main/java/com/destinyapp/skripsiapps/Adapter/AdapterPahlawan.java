@@ -128,8 +128,8 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
 
     class CardViewViewHolder extends RecyclerView.ViewHolder{
         ImageView imgPhoto;
-        TextView tvName, tvRemarks;
-        Button btnFavorite, btnShare;
+        TextView tvName,tvRemarks;
+        Button btnFavorite,btnShare;
         LinearLayout layoutCardView;
         CardViewViewHolder(View itemView) {
             super(itemView);

@@ -39,7 +39,7 @@ public class TabDeskripsi extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         deskripsi = (TextView)view.findViewById(R.id.Deskripsi);
-        final MediaPlayer SuaraMe = MediaPlayer.create(getActivity(),R.raw.sherisingshieldhero);
+        final MediaPlayer SuaraMe = MediaPlayer.create(getActivity(),R.raw.supriyadi);
         deskripsi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

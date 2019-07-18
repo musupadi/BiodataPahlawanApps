@@ -10,9 +10,10 @@
     <string name="action_register">Register</string>
     <string name="action_logout">Logout</string>
     <string name="base_url">http://192.168.0.3/BiodataPahlawan/</string>
-    <string name="about_supriyadi">Saya adalah seorang Full Stack Freelance Programmer untuk Platform Android,Desktop dan Web
-        Saya juga Seorang Mahasiswa Semester 8 di Universitas Indrapasta PGRI, Aplikasi ini dibuat untuk memenuhi tugas KKP dari
-        Kampus Kami dan juga untuk mempermudah manajemen raport pada sekolah.
+    <string name="about_supriyadi">Saya adalah seorang Full Stack Freelancer Programmer untuk platform Android,Desktop dan Web, saya juga salah satu lulusan Kotlin
+        Android Developer Expert (KADE) di Dicoding. Saya juga merupakan seorang mahasiswa
+        Semester 8 di Universitas Indrapasta PGRI Jurusan Teknik Informatika, Aplikasi ini dibuat untuk memenuhi Tugas Akhir dari kampus saya dan juga untuk mempermudah
+        pengenalan Pahlawan di Indonesia.
     </string>
     <string name="koneksi_gagal">Koneksi Gagal Harap Dicoba lagi lain kali</string>
     <string name="data_error">Terjadi kesalahan... harap hubungi Developer</string>
