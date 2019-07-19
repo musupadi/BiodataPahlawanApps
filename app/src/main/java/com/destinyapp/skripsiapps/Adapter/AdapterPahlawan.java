@@ -50,23 +50,21 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
     @Override
     public void onBindViewHolder(@NonNull final CardViewViewHolder cardViewViewHolder, int i) {
         final ModelPahlawan p = getListPahlawan().get(i);
-        dbHelper = new DB_Helper(context);
-        Cursor cursor = dbHelper.checkPahlawan(p.getNama());
-        String nama = null;
-        if (cursor.getCount()>0){
-            while (cursor.moveToNext()){
-                nama = cursor.getString(0);
-            }
-        }
-        if (nama != null){
-            cardViewViewHolder.btnFavorite.setText("Favorited");
-        }
+
         Glide.with(context)
                 .load(p.getPhoto())
                 .apply(new RequestOptions().override(350, 550))
                 .into(cardViewViewHolder.imgPhoto);
         cardViewViewHolder.tvName.setText(p.getNama());
         cardViewViewHolder.tvRemarks.setText(p.getRemarks());
+        String names=null;
+        dbHelper = new DB_Helper(context);
+        Cursor cursors = dbHelper.checkPahlawan(p.getNama());;
+        if (cursors.getCount()>0){
+            cardViewViewHolder.btnFavorite.setText("Terfavorit");
+        }else{
+            cardViewViewHolder.btnFavorite.setText("Favorit");
+        }
         cardViewViewHolder.btnFavorite.setOnClickListener(new CustomOnItemClickListener(i, new CustomOnItemClickListener.OnItemClickCallback() {
             @Override
             public void onItemClicked(View view, int position) {
@@ -78,13 +76,13 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
                     }
                 }
                 if (name != null){
-                    Toast.makeText(context,"Pahlawan Sudah Menjadi Favorite",Toast.LENGTH_SHORT).show();
-                    cardViewViewHolder.btnFavorite.setText("Favorited");
-                    //dbHelper.deletePahlawanRecord(p.getNama(),context);
+                    dbHelper.deletePahlawanRecord(p.getNama(),context);
+                    cardViewViewHolder.btnFavorite.setText("Favorit");
                 }else{
-                    Toast.makeText(context,"Pahlawan Berhasil Difavoritekan",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,"Pahlawan Berhasil Difavoritkan",Toast.LENGTH_SHORT).show();
                     Pahlawan pahlawan = new Pahlawan(p.getNama(),p.getRemarks(),p.getPhoto(),p.getDetail(),p.getLahir(),p.getWafat(),p.getLangitude(),p.getLongitude());
                     dbHelper.FavoritePahlawan(pahlawan);
+                    cardViewViewHolder.btnFavorite.setText("Terfavorit");
                 }
             }
         }));

@@ -13,12 +13,13 @@
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/pahlawanku"
-        android:roundIcon="@drawable/pahlawanku"
         android:label="@string/app_name"
         android:largeHeap="true"
+        android:roundIcon="@drawable/pahlawanku"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".KuisActivity"></activity>
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

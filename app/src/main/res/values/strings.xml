@@ -9,7 +9,7 @@
     <string name="action_login">Login</string>
     <string name="action_register">Register</string>
     <string name="action_logout">Logout</string>
-    <string name="base_url">http://192.168.0.3/BiodataPahlawan/</string>
+    <string name="base_url">http://musupadilatihan.000webhostapp.com/BiodataPahlawan/Profile/</string>
     <string name="about_supriyadi">Saya adalah seorang Full Stack Freelancer Programmer untuk platform Android,Desktop dan Web, saya juga salah satu lulusan Kotlin
         Android Developer Expert (KADE) di Dicoding. Saya juga merupakan seorang mahasiswa
         Semester 8 di Universitas Indrapasta PGRI Jurusan Teknik Informatika, Aplikasi ini dibuat untuk memenuhi Tugas Akhir dari kampus saya dan juga untuk mempermudah
@@ -25,7 +25,7 @@
     <string name="menu_send">Send</string>
     <string name="favorite">Favorite</string>
     <string name="share">Makam</string>
-    <string name="about">About Developer</string>
+    <string name="about">Tentang Pengembang</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

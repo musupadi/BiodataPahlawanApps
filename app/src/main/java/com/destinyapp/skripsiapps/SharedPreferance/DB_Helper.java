@@ -99,7 +99,7 @@ public class DB_Helper extends SQLiteOpenHelper {
     public void deletePahlawanRecord(String nama, Context context) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM "+TABLE_NAME_BIODATA+" WHERE nama='"+nama+"'");
-        Toast.makeText(context, "Deleted successfully.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Pahlawan Favorit Berhasil Terhapus", Toast.LENGTH_SHORT).show();
 
     }
     public void saveSession(User user){

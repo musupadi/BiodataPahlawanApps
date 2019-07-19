@@ -2,6 +2,7 @@ package com.destinyapp.skripsiapps.Pahlawan;
 
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -16,7 +17,9 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.destinyapp.skripsiapps.DashboardActivity;
 import com.destinyapp.skripsiapps.Maps.MapsActivity;
+import com.destinyapp.skripsiapps.Model.Pahlawan;
 import com.destinyapp.skripsiapps.R;
+import com.destinyapp.skripsiapps.SharedPreferance.DB_Helper;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,6 +29,7 @@ public class DetailPahlawan extends Fragment {
     ImageView photo;
     TextView nama,remarks,lahir,wafat,detail;
     Button Favorite,Makam;
+    DB_Helper dbHelper;
 
     public DetailPahlawan() {
         // Required empty public constructor
@@ -61,12 +65,34 @@ public class DetailPahlawan extends Fragment {
         lahir = (TextView)view.findViewById(R.id.tvLahir);
         wafat = (TextView)view.findViewById(R.id.tvWafat);
         Makam = (Button)view.findViewById(R.id.btn_set_share);
+        Favorite = (Button)view.findViewById(R.id.btn_set_favorite);
         //Done
         getData(Nama,Remarks,Photo,Detail,Lahir,Wafat);
         Makam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getDataMap(Nama,Remarks,Photo,Detail,Lahir,Wafat,Langitude,Longitude);
+            }
+        });
+        dbHelper = new DB_Helper(getActivity());
+        Cursor cursors = dbHelper.checkPahlawan(Nama);;
+        if (cursors.getCount()>0){
+            Favorite.setText("Terfavorit");
+        }else{
+            Favorite.setText("Favorit");
+        }
+        Favorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Cursor cursors = dbHelper.checkPahlawan(Nama);;
+                if (cursors.getCount()>0){
+                    dbHelper.deletePahlawanRecord(Nama,getActivity());
+                    Favorite.setText("Favorit");
+                }else{
+                    Pahlawan pahlawan = new Pahlawan(Nama,Remarks,Photo,Detail,Lahir,Wafat,Langitude,Longitude);
+                    dbHelper.FavoritePahlawan(pahlawan);
+                    Favorite.setText("Terfavorit");
+                }
             }
         });
     }

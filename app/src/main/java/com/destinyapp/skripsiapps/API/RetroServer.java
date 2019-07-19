@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroServer {
-    private static final String base_url = "http://192.168.0.3/BiodataPahlawan/API/";
+    private static final String base_url = "http://musupadilatihan.000webhostapp.com/BiodataPahlawan/API/";
     private static Retrofit retrofit;
 
     public static Retrofit getClient(){

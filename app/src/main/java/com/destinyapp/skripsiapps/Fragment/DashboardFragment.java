@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.destinyapp.skripsiapps.DashboardActivity;
+import com.destinyapp.skripsiapps.KuisActivity;
 import com.destinyapp.skripsiapps.Pahlawan.ListPahlawan;
 import com.destinyapp.skripsiapps.R;
 
@@ -77,8 +78,9 @@ public class DashboardFragment extends Fragment {
         kuis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goInput = new Intent(getActivity(), DashboardActivity.class);
-                goInput.putExtra("KUIS","kuis");
+                Intent goInput = new Intent(getActivity(),KuisActivity.class);
+                goInput.putExtra("NO",String.valueOf(0));
+                goInput.putExtra("SCORE",String.valueOf(0));
                 getActivity().startActivities(new Intent[]{goInput});
             }
         });

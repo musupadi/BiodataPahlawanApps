@@ -1,81 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:padding="30dp"
-    android:background="@drawable/vintage_background">
-
+    android:layout_centerInParent="true"
+    android:background="@drawable/vintage_background"
+    android:padding="20dp">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:background="@drawable/vintagecard"
-        android:padding="10dp">
-        <TextView
-            android:layout_marginTop="20dp"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:id="@+id/List"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="No 1"
-            android:textSize="30sp"
-            android:layout_weight="2"/>
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/vintagecard"
+                android:layout_centerInParent="true">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:text="NILAI"
                     android:gravity="center"
-                    android:text="Tangal berapakah Ki Hadjar Dewantara Lahir ?"
-                    android:textSize="25sp"/>
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/pureBlack"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="0"
+                    android:textColor="@color/pureBlack"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="bottom|center"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btnKuis"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ikut Kuis Lagi"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Simpan Score"
+                        android:textSize="10sp" />
+                </LinearLayout>
             </LinearLayout>
-        </ScrollView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:text="A.2 Mei 1889"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:text="A.1 April 1820"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:text="A.10 Januari 1874"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:text="A.23 maret 1870"/>
-        </LinearLayout>
+        </RelativeLayout>
+
     </LinearLayout>
 
-
-</LinearLayout>
+</RelativeLayout>

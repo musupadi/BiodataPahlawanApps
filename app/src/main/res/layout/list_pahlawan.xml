@@ -56,7 +56,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:orientation="horizontal"
                 android:gravity="bottom|center">
 
@@ -66,8 +65,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/favorite"
-                    android:textSize="10sp" />
+                    android:text="Favorit"
+                    android:textSize="7sp" />
 
                 <Button
                     android:id="@+id/btn_set_share"
@@ -75,8 +74,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/share"
-                    android:textSize="10sp" />
+                    android:text="Lokasi Makam"
+                    android:textSize="7sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

@@ -132,7 +132,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:text="Pahlawan Favorit Saya"
+                                            android:text="Pahlawan Favorit"
                                             android:textSize="16sp"
                                             android:gravity="top|center"
                                             android:layout_weight="1"/>
@@ -188,7 +188,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:text="Kuis Pahlawan"
+                                            android:text="Kuis"
                                             android:textSize="16sp"
                                             android:gravity="top|center"
                                             android:layout_weight="1"/>
@@ -234,7 +234,7 @@
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
-                                            android:text="High Score Kuis"
+                                            android:text="Nilai Tertinggi Kuis"
                                             android:textSize="16sp"
                                             android:gravity="top|center"
                                             android:layout_weight="1"/>

@@ -37,6 +37,7 @@ import com.destinyapp.skripsiapps.Pahlawan.DetailPahlawan;
 import com.destinyapp.skripsiapps.Pahlawan.ListPahlawan;
 import com.destinyapp.skripsiapps.SharedPreferance.DB_Helper;
 import com.destinyapp.skripsiapps.SharedPreferance.User;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import retrofit2.Call;
@@ -51,7 +52,7 @@ public class DashboardActivity extends AppCompatActivity
     String User,Person;
     MenuItem LoginApp,RegisterApp,LogoutApp;
     TextView navUsername,navName;
-    CircleImageView navHeaderPP;
+    //CircularImageView navHeaderPP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +73,7 @@ public class DashboardActivity extends AppCompatActivity
         View headerView = navigationView.getHeaderView(0);
         navUsername = (TextView) headerView.findViewById(R.id.navHeaderUsername);
         navName = (TextView)headerView.findViewById(R.id.navHeaderNama);
-        navHeaderPP = (CircleImageView) headerView.findViewById(R.id.navHeaderPP);
+       // navHeaderPP = (CircularImageView) headerView.findViewById(R.id.navHeaderPP);
         //DONE
 
         //Checker
@@ -97,6 +98,7 @@ public class DashboardActivity extends AppCompatActivity
         String List = data.getStringExtra("LIST");
         String Data = data.getStringExtra("DATA");
         String Cari = data.getStringExtra("CARI");
+        String Score = data.getStringExtra("SCORE");
         String Favorite = data.getStringExtra("FAVORITE");
         String Kuis = data.getStringExtra("KUIS");
         String Highscore = data.getStringExtra("HIGHSCORE");
@@ -121,12 +123,13 @@ public class DashboardActivity extends AppCompatActivity
             fragment = new CariPahlawan();
         }else if(Favorite !=null){
             fragment = new CariPahlawan();
-        }else if(Kuis !=null){
-            fragment = new KuisFragment();
         }else if(Highscore !=null){
             fragment = new HighScoreFragment();
-        }else if(Musik !=null){
-            fragment = new CariPahlawan();
+        }else if(Score !=null){
+            Bundle bundle = new Bundle();
+            bundle.putString("SCORE",Score);
+            fragment = new KuisFragment();
+            fragment.setArguments(bundle);
         }else if(DetailExtra !=null){
             Bundle bundle = new Bundle();
             bundle.putString("Nama",Nama);
@@ -251,7 +254,7 @@ public class DashboardActivity extends AppCompatActivity
         data.enqueue(new Callback<ResponseModel>() {
             @Override
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
-                getImageFromURL(response.body().getProfile());
+//                getImageFromURL(response.body().getProfile());
                 navName.setText(response.body().getNama());
                 navUsername.setText(response.body().getUsername());
             }
@@ -262,11 +265,11 @@ public class DashboardActivity extends AppCompatActivity
             }
         });
     }
-    private void getImageFromURL(String url){
-        String BASE_URL = getString(R.string.base_url);
-        String URL = BASE_URL+"Profile/"+url;
-        Glide.with(DashboardActivity.this)
-                .load(URL)
-                .into(navHeaderPP);
-    }
+//    private void getImageFromURL(String url){
+//        String BASE_URL = getString(R.string.base_url);
+//        String URL = BASE_URL+"Profile/"+url;
+//        Glide.with(DashboardActivity.this)
+//                .load(URL)
+//                .into(navHeaderPP);
+//    }
 }
