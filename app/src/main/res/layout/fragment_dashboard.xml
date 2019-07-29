@@ -23,7 +23,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:src="@drawable/pahlawanku"/>
+                    android:background="@drawable/pahlawanku"/>
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="286dp"
@@ -64,8 +64,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:orientation="vertical"
-                                android:background="@drawable/vintagecard">
+                                android:orientation="vertical">
                                 <RelativeLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -75,7 +74,7 @@
                                         android:layout_height="match_parent"
                                         android:orientation="vertical"
                                         android:padding="5dp"
-                                        >
+                                        android:background="@drawable/vintagecard">
                                         <ImageView
                                             android:src="@drawable/biodata"
                                             android:layout_width="match_parent"
@@ -121,9 +120,8 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:orientation="vertical"
-                                        android:background="@drawable/vintagecard"
                                         android:padding="5dp"
-                                        >
+                                        android:background="@drawable/vintagecard">
                                         <ImageView
                                             android:src="@drawable/favorite"
                                             android:layout_weight="1"
@@ -163,12 +161,12 @@
                             android:layout_marginTop="4dp"
                             android:layout_marginRight="8dp"
                             android:layout_marginBottom="4dp"
-                            card_view:cardCornerRadius="4dp"
-                            >
+                            card_view:cardCornerRadius="4dp">
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:background="@drawable/vintagecard">
                                 <RelativeLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -177,7 +175,6 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:orientation="vertical"
-                                        android:background="@drawable/vintagecard"
                                         android:padding="5dp"
                                         >
                                         <ImageView
@@ -216,6 +213,7 @@
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
                                 <RelativeLayout
+                                    android:background="@drawable/vintagecard"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center">
@@ -223,7 +221,6 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:orientation="vertical"
-                                        android:background="@drawable/vintagecard"
                                         android:padding="5dp"
                                         >
                                         <ImageView
