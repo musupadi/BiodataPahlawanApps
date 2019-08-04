@@ -135,7 +135,7 @@ public class PahlawanData {
             {
                     "Supriyadi",
                     "Pahlawan Kemerdekaan Nasional",
-                    "https://id.wikipedia.org/w/index.php?title=Berkas:Supriyadi.jpg&filetimestamp=20180524072930&",
+                    "https://upload.wikimedia.org/wikipedia/id/thumb/c/cb/Supriyadi.jpg/220px-Supriyadi.jpg",
                     "Supriyadi lahir di Jawa Timur, Hindia Belanda, pada tanggal 13 April 1923. Sesudah menamatkan Europeesche Lagere School (setingkat Sekolah Dasar), Soeprijadi melanjutkan pendidikannya ke Meer Uitgebreid Lager Onderwijs (setingkat Sekolah Pertama), dan kemudian memasuki Sekolah Pamong Praja di Magelang. Namun, Jepang menyerbu Hindia Belanda sebelum ia lulus. Ia kemudian mengikuti pelatihan Seimendoyo di Tangerang, Jawa Barat.",
                     "13 April 1923",
                     "Hilang",
@@ -169,81 +169,102 @@ public class PahlawanData {
                     "R.A Kartini",
                     "Pahlawan Kemerdekaan Nasional",
                     "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/COLLECTIE_TROPENMUSEUM_Portret_van_Raden_Ajeng_Kartini_TMnr_10018776.jpg/200px-COLLECTIE_TROPENMUSEUM_Portret_van_Raden_Ajeng_Kartini_TMnr_10018776.jpg",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Raden Adjeng Kartini berasal dari kalangan priyayi atau kelas bangsawan Jawa,Ia merupakan putri dari Raden Mas Adipati Ario Sosroningrat, seorang patih yang diangkat menjadi bupati Jepara segera setelah Kartini lahir. Kartini adalah putri dari istri pertama, tetapi bukan istri utama. Ibunya bernama M.A. Ngasirah, putri dari Nyai Haji Siti Aminah dan Kyai Haji Madirono, seorang guru agama di Telukawur, Jepara,Dari sisi ayahnya, silsilah Kartini dapat dilacak hingga Hamengkubuwana VI. Garis keturunan Bupati Sosroningrat bahkan dapat ditilik kembali ke istana Kerajaan Majapahit. Semenjak Pangeran Dangirin menjadi bupati Surabaya pada abad ke-18, nenek moyang Sosroningrat mengisi banyak posisi penting di Pangreh Praja.[2] \n" +
+                            "Ayah Kartini pada mulanya adalah seorang wedana di Mayong. Peraturan kolonial waktu itu mengharuskan seorang bupati beristerikan seorang bangsawan. Karena M.A. Ngasirah bukanlah bangsawan tinggi, maka ayahnya menikah lagi dengan Raden Adjeng Woerjan (Moerjam), keturunan langsung Raja Madura. Setelah perkawinan itu, maka ayah Kartini diangkat menjadi bupati di Jepara menggantikan kedudukan ayah kandung R.A. Woerjan, R.A.A. Tjitrowikromo. \n" +
+                            "Kartini adalah anak ke-5 dari 11 bersaudara kandung dan tiri. Dari kesemua saudara sekandung, Kartini adalah anak perempuan tertua. Kakeknya, Pangeran Ario Tjondronegoro IV, diangkat bupati dalam usia 25 tahun dan dikenal pada pertengahan abad ke-19 sebagai salah satu bupati pertama yang memberi pendidikan Barat kepada anak-anaknya.Kakak Kartini, Sosrokartono, adalah seorang yang pintar dalam bidang bahasa. Sampai usia 12 tahun, Kartini diperbolehkan bersekolah di ELS (Europese Lagere School). Di sini antara lain Kartini belajar bahasa Belanda. Tetapi setelah usia 12 tahun, ia harus tinggal di rumah karena sudah bisa dipingit. \n" +
+                            "\n" +
+                            "Karena Kartini bisa berbahasa Belanda, maka di rumah ia mulai belajar sendiri dan menulis surat kepada teman-teman korespondensi yang berasal dari Belanda. Salah satunya adalah Rosa Abendanon yang banyak mendukungnya. Dari buku-buku, koran, dan majalah Eropa, Kartini tertarik pada kemajuan berpikir perempuan Eropa. Timbul keinginannya untuk memajukan perempuan pribumi, karena ia melihat bahwa perempuan pribumi berada pada status sosial yang rendah. \n" +
+                            "Kartini banyak membaca surat kabar Semarang De Locomotief yang diasuh Pieter Brooshooft, ia juga menerima leestrommel (paket majalah yang diedarkan toko buku kepada langganan). Di antaranya terdapat majalah kebudayaan dan ilmu pengetahuan yang cukup berat, juga ada majalah wanita Belanda De Hollandsche Lelie. Kartini pun kemudian beberapa kali mengirimkan tulisannya dan dimuat di De Hollandsche Lelie. Dari surat-suratnya tampak Kartini membaca apa saja dengan penuh perhatian, sambil membuat catatan-catatan. Kadang-kadang Kartini menyebut salah satu karangan atau mengutip beberapa kalimat. Perhatiannya tidak hanya semata-mata soal emansipasi wanita, tetapi juga masalah sosial umum. Kartini melihat perjuangan wanita agar memperoleh kebebasan, otonomi dan persamaan hukum sebagai bagian dari gerakan yang lebih luas. Di antara buku yang dibaca Kartini sebelum berumur 20, terdapat judul Max Havelaar dan Surat-Surat Cinta karya Multatuli, yang pada November 1901 sudah dibacanya dua kali. Lalu De Stille Kraacht (Kekuatan Gaib) karya Louis Coperus. Kemudian karya Van Eeden yang bermutu tinggi, karya Augusta de Witt yang sedang-sedang saja, roman-feminis karya Nyonya Goekoop de-Jong Van Beek dan sebuah roman anti-perang karangan Berta Von Suttner, Die Waffen Nieder (Letakkan Senjata). Semuanya berbahasa Belanda. \n" +
+                            "Oleh orangtuanya, Kartini dijodohkan dengan bupati Rembang, K.R.M. Adipati Ario Singgih Djojo Adhiningrat, yang sudah pernah memiliki tiga istri. Kartini menikah pada tanggal 12 November 1903. Suaminya mengerti keinginan Kartini dan Kartini diberi kebebasan dan didukung mendirikan sekolah wanita di sebelah timur pintu gerbang kompleks kantor kabupaten Rembang, atau di sebuah bangunan yang kini digunakan sebagai Gedung Pramuka. \n" +
+                            "Sekolah Kartini (Kartinischool), 1918.\n" +
+                            "Anak pertama dan sekaligus terakhirnya, Soesalit Djojoadhiningrat, lahir pada tanggal 13 September 1904. Beberapa hari kemudian, 17 September 1904, Kartini meninggal pada usia 25 tahun. Kartini dimakamkan di Desa Bulu, Kecamatan Bulu, Rembang. \n" +
+                            "Berkat kegigihannya Kartini, kemudian didirikan Sekolah Wanita oleh Yayasan Kartini di Semarang pada 1912, dan kemudian di Surabaya, Yogyakarta, Malang, Madiun, Cirebon dan daerah lainnya. Nama sekolah tersebut adalah \"Sekolah Kartini\". Yayasan Kartini ini didirikan oleh keluarga Van Deventer, seorang tokoh Politik Etis. \n" +
+                            "\n",
+                    "21 April 1879",
+                    "17 September 1904",
+                    "-6.8624301",
+                    "111.4064007"
             },
             {
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Pattimura",
+                    "Pahlawan Kemerdekaan Indonesia",
+                    "https://upload.wikimedia.org/wikipedia/id/1/17/Pattimura_2.jpg",
+                    "Pattimura (Thomas Matulessy) lahir di Haria, pulau Saparua, Maluku, 8 Juni 1783 – meninggal di Ambon, Maluku, 16 Desember 1817 pada umur 34 tahun), juga dikenal dengan nama Kapitan Pattimura adalah Pahlawan nasional Indonesia dari Maluku.\n" +
+                            "\n" +
+                            "Menurut buku biografi Pattimura versi pemerintah yang pertama kali terbit, M Sapija menulis, \"Bahwa pahlawan Pattimura tergolong turunan bangsawan dan berasal dari Nusa Ina (Seram)\". Ayahnya yang bernama Antoni Matulessy adalah anak dari Kasimiliali Pattimura Mattulessy. Yang terakhir ini adalah putra raja Sahulau. Sahulau merupakan nama orang di negeri yang terletak dalam sebuah teluk di Seram.\n" +
+                            "\n" +
+                            "Namanya kini diabadikan untuk Universitas Pattimura dan Bandar Udara Pattimura di Ambon. ",
+                    "8 Juni 1783",
+                    "16 Desember 1817",
+                    "-6.2571826",
+                    "106.8461926"
             },
             {
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Agus Salim",
+                    "Pahlawan Kemerdekaan Indonesia",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Agus_Salim%2C_Pekan_Buku_Indonesia_1954%2C_p246.jpg/220px-Agus_Salim%2C_Pekan_Buku_Indonesia_1954%2C_p246.jpg",
+                    "Haji Agus Salim (lahir dengan nama Masyhudul Haq (berarti \"pembela kebenaran\"); lahir di Koto Gadang, Agam, Sumatra Barat, Hindia Belanda, 8 Oktober 1884 – meninggal di Jakarta, Indonesia, 4 November 1954 pada umur 70 tahun) adalah seorang pejuang kemerdekaan Indonesia. Haji Agus Salim ditetapkan sebagai salah satu Pahlawan Nasional Indonesia pada tanggal 27 Desember 1961 melalui Keppres nomor 657 tahun 1961.",
+                    "8 Oktober 1884",
+                    "4 November 1954",
+                    "-6.2571826",
+                    "106.8461926"
             },
             {
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Ahmad Yani",
+                    "Pahlawan Kemerdekaan Indonesia",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ahmad_Yani.jpg/200px-Ahmad_Yani.jpg",
+                    "Jenderal TNI Anumerta Ahmad Yani (juga dieja Achmad Yani; lahir di Purworejo, Jawa Tengah, 19 Juni 1922 – meninggal di Lubang Buaya, Jakarta, 1 Oktober 1965 pada umur 43 tahun) adalah komandan Tentara Nasional Indonesia Angkatan Darat, dan dibunuh oleh anggota Gerakan 30 September saat mencoba untuk menculik dia dari rumahnya. ",
+                    "19 Juni 1922",
+                    "1 Oktober 1965",
+                    "-6.2571826",
+                    "106.8461926"
             },
             {
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Sutan Syahrir",
+                    "Pahlawan Kemerdekaan Indonesia",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sutan_Sjahrir%2C_Pekan_Buku_Indonesia_1954%2C_p246.jpg/220px-Sutan_Sjahrir%2C_Pekan_Buku_Indonesia_1954%2C_p246.jpg",
+                    "Sutan Syahrir (ejaan lama: Soetan Sjahrir, lahir di Padang Panjang, Sumatra Barat, 5 Maret 1909 – meninggal di Zürich, Swiss, 9 April 1966 pada umur 57 tahun) adalah seorang intelektual, perintis, dan revolusioner kemerdekaan Indonesia. Setelah Indonesia merdeka, ia menjadi politikus dan perdana menteri pertama Indonesia. Ia menjabat sebagai Perdana Menteri Indonesia dari 14 November 1945 hingga 20 Juni 1947. Syahrir mendirikan Partai Sosialis Indonesia pada tahun 1948. Ia meninggal dalam pengasingan sebagai tawanan politik dan dimakamkan di TMP Kalibata, Jakarta. Sutan Syahrir ditetapkan sebagai salah seorang Pahlawan Nasional Indonesia pada tanggal 9 April 1966 melalui Keppres nomor 76 tahun 1966",
+                    "5 Maret 1909",
+                    "9 April 1966",
+                    "-6.2571826",
+                    "106.8461926"
             },
             {
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Abdul Haris Nasution",
+                    "Pahlawan Kemerdekaan Indonesia",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Abdul_Harris_Nasution.jpg/220px-Abdul_Harris_Nasution.jpg",
+                    "Jenderal Besar TNI (Purn.) Abdul Haris Nasution (lahir di Kotanopan, Sumatra Utara, 3 Desember 1918 – meninggal di Jakarta, 6 September 2000 pada umur 81 tahun) adalah seorang pahlawan nasional Indonesia yang merupakan salah satu tokoh yang menjadi sasaran dalam peristiwa Gerakan 30 September, tetapi yang menjadi korban adalah putrinya Ade Irma Suryani Nasution dan ajudannya, Lettu Pierre Tendean. \n" +
+                            "Nasution merupakan konseptor Dwifungsi ABRI yang disampaikan pada tahun 1958 yang kemudian diadopsi selama pemerintahan Soeharto. Konsep dasar yang ditawarkan tersebut merupakan jalan agar ABRI tidak harus berada di bawah kendali sipil, tetapi pada saat yang sama tidak boleh mendominasi sehingga menjadi sebuah kediktatoran militer. \n" +
+                            "Bersama Soeharto dan Soedirman, Nasution menerima pangkat kehormatan Jenderal Besar yang dianugerahkan pada tanggal 5 Oktober 1997, saat ulang tahun ABRI. \n",
+                    "3 Desember 1918",
+                    "5 September 2000 ",
+                    "-6.2571826",
+                    "106.8461926"
             },
             {
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Siswondo Parman",
+                    "Pahlawan Kemerdekaan Indonesia",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/S_Parman.jpg/220px-S_Parman.jpg",
+                    "Letnan Jenderal TNI Anumerta Siswondo Parman (lahir di Wonosobo, Jawa Tengah, 4 Agustus 1918 – meninggal di Lubang Buaya, Jakarta, 1 Oktober 1965 pada umur 47 tahun) atau lebih dikenal dengan nama S. Parman adalah salah satu pahlawan revolusi Indonesia dan tokoh militer Indonesia. Ia meninggal dibunuh pada persitiwa Gerakan 30 September dan mendapatkan gelar Letnan Jenderal Anumerta. Ia dimakamkan di TMP Kalibata, Jakarta.",
+                    "4 Agustus 1918",
+                    "1 Oktober 1965",
+                    "-6.2571826",
+                    "106.8461926"
             },
             {
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Donald Isaac Panjaitan",
+                    "Pahlawan Kemerdekaan Indonesia",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Panjaitan.jpg/220px-Panjaitan.jpg",
+                    "Mayor Jenderal TNI Anumerta Donald Isaac Panjaitan (lahir di Balige, Sumatera Utara, 9 Juni 1925 – meninggal di Lubang Buaya, Jakarta, 1 Oktober 1965 pada umur 40 tahun) adalah salah satu pahlawan revolusi Indonesia. Ia dimakamkan di Taman Makam Pahlawan Kalibata, Jakarta \n" +
+                            "Panjaitan lahir di Balige, Tapanuli, 19 Juni 1925. Pendidikan formal diawali dari Sekolah Dasar, kemudian masuk Sekolah Menengah Pertama, dan terakhir di Sekolah Menengah Atas. Ketika ia tamat Sekolah Menengah Atas, Indonesia sedang dalam pendudukan Jepang. Sehingga ketika masuk menjadi anggota militer ia harus mengikuti latihan Gyugun. Selesai latihan, ia ditugaskan sebagai anggota Gyugun di Pekanbaru, Riau hingga Indonesia memproklamasikan kemerdekaannya. \n" +
+                            "Ketika Indonesia sudah meraih kemerdekaan, ia bersama para pemuda lainnya membentuk Tentara Keamanan Rakyat (TKR) yang kemudian menjadi TNI. Di TKR, ia pertama kali ditugaskan menjadi komandan batalyon, kemudian menjadi Komandan Pendidikan Divisi IX/Banteng di Bukittinggi pada tahun 1948. Seterusnya menjadi Kepala Staf Umum IV (Supplay) Komandemen Tentara Sumatera. Dan ketika Pasukan Belanda melakukan Agresi Militernya yang Ke II, ia diangkat menjadi Pimpinan Perbekalan Perjuangan Pemerintah Darurat Republik Indonesia (PDRI). \n" +
+                            "Seiring dengan berakhirnya Agresi Militer Belanda ke II, Indonesia pun memperoleh pengakuan kedaulatan. Panjaitan sendiri kemudian diangkat menjadi Kepala Staf Operasi Tentara dan Teritorium (T&T) I Bukit Barisan di Medan. Selanjutnya dipindahkan lagi ke Palembang menjadi Kepala Staf T & T II/Sriwijaya. \n" +
+                            "Setelah mengikuti kursus Militer Atase (Milat) tahun 1956, ia ditugaskan sebagai Atase Militer RI di Bonn, Jerman Barat. Ketika masa tugasnya telah berakhir sebagai Atase Militer, ia pun pulang ke Indonesia. Namun tidak lama setelah itu yakni pada tahun 1962, perwira yang pernah menimba ilmu pada Associated Command and General Staff College, Amerika Serikat ini, ditunjuk menjadi Asisten IV Menteri/Panglima Angkatan Darat (Men/Pangad). Jabatan inilah terakhir yang diembannya saat peristiwa G 30/S PKI terjadi. \n" +
+                            "Ketika menjabat Asisten IV Men/Pangad, ia mencatat prestasi tersendiri atas keberhasilannya membongkar rahasia pengiriman senjata dari Republik Rakyat Tiongkok (RRT) untuk PKI. Dari situ diketahui bahwa senjata-senjata tersebut dimasukkan ke dalam peti-peti bahan bangunan yang akan dipakai dalam pembangunan gedung Conefo (Conference of the New Emerging Forces). Senjata-senjata itu diperlukan PKI yang sedang giatnya mengadakan persiapan untuk mempersenjatai angkatan kelima. \n",
+                    "9 Juni 1925",
+                    "1 Oktober 1965",
+                    "-6.2571826",
+                    "106.8461926"
             }
     };
     public static ArrayList<ModelPahlawan> getListData(){
