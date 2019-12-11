@@ -17,7 +17,8 @@
         android:largeHeap="true"
         android:roundIcon="@drawable/pahlawanku"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity android:name=".KuisActivity"></activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />

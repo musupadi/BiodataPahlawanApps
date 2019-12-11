@@ -26,7 +26,7 @@
                     android:background="@drawable/pahlawanku"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="286dp"
+                    android:layout_height="300dp"
                     android:src="@color/pureBlack"
                     android:alpha="0.5"/>
 
