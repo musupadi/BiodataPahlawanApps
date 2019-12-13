@@ -3,6 +3,7 @@ package com.destinyapp.skripsiapps;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        final MediaPlayer SuaraLagu = MediaPlayer.create(MainActivity.this,R.raw.start);
+        SuaraLagu.start();
         dbHelper = new DB_Helper(this);
         Cursor cursor = dbHelper.checkSession();
         if (cursor.getCount()>0){
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 changeActivity();
                 finish();
             }
-        }, 3000); //3000 L = 3 detik
+        }, 5000); //3000 L = 3 detik
 
 //        Nama = (TextView)findViewById(R.id.tvNama);
 //        sub = (Button)findViewById(R.id.btnMasukApps);
