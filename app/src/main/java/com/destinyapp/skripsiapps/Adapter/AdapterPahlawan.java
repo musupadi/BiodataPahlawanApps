@@ -80,7 +80,7 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
                     cardViewViewHolder.btnFavorite.setText("Favorit");
                 }else{
                     Toast.makeText(context,"Pahlawan Berhasil Difavoritkan",Toast.LENGTH_SHORT).show();
-                    Pahlawan pahlawan = new Pahlawan(p.getNama(),p.getRemarks(),p.getPhoto(),p.getDetail(),p.getLahir(),p.getWafat(),p.getLangitude(),p.getLongitude());
+                    Pahlawan pahlawan = new Pahlawan(p.getNama(),p.getRemarks(),p.getPhoto(),p.getDetail(),p.getLahir(),p.getWafat(),p.getLangitude(),p.getLongitude(),p.getSuara());
                     dbHelper.FavoritePahlawan(pahlawan);
                     cardViewViewHolder.btnFavorite.setText("Terfavorit");
                 }
@@ -98,6 +98,7 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
                 goInput.putExtra("Wafat",p.getWafat());
                 goInput.putExtra("Lang",p.getLangitude());
                 goInput.putExtra("Long",p.getLongitude());
+                goInput.putExtra("Suara",p.getSuara());
                 context.startActivities(new Intent[]{goInput});
             }
         }));
@@ -114,6 +115,7 @@ public class AdapterPahlawan extends RecyclerView.Adapter<AdapterPahlawan.CardVi
                 goInput.putExtra("Wafat",getListPahlawan().get(position).getWafat());
                 goInput.putExtra("Lang",getListPahlawan().get(position).getLangitude());
                 goInput.putExtra("Long",getListPahlawan().get(position).getLongitude());
+                goInput.putExtra("Suara",getListPahlawan().get(position).getSuara());
                 context.startActivities(new Intent[]{goInput});
             }
         }));

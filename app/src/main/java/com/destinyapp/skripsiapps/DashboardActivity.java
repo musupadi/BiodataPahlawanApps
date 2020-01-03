@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -112,7 +113,7 @@ public class DashboardActivity extends AppCompatActivity
         final String Wafat = data.getStringExtra("Wafat");
         final String Langitude = data.getStringExtra("Lang");
         final String Longitude = data.getStringExtra("Long");
-
+        final String Suara = data.getStringExtra("Suara");
         if (List !=null){
             Bundle bundle = new Bundle();
             bundle.putString("LIST",List);
@@ -140,6 +141,7 @@ public class DashboardActivity extends AppCompatActivity
             bundle.putString("Wafat",Wafat);
             bundle.putString("Lang",Langitude);
             bundle.putString("Long",Longitude);
+            bundle.putString("Suara",Suara);
             fragment = new DetailPahlawan();
             fragment.setArguments(bundle);
         }
@@ -211,6 +213,28 @@ public class DashboardActivity extends AppCompatActivity
             fragment = new DashboardFragment();
         }else if (id == R.id.nav_about) {
             fragment = new AboutMe();
+        }else if (id == R.id.nav_out) {
+            final MediaPlayer SuaraLagu = MediaPlayer.create(DashboardActivity.this,R.raw.keluar);
+            SuaraLagu.start();
+            AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);
+            builder.setMessage("Anda Yakin ingin Keluar Aplikasi ?")
+                    .setCancelable(false)
+                    .setPositiveButton("Iya", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            finishAffinity();
+                            onDestroy();
+                        }
+                    })
+                    .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    })
+                    //Set your icon here
+                    .setTitle("Perhatian !!!")
+                    .setIcon(R.drawable.ic_close_black_24dp);
+            AlertDialog alert = builder.create();
+            alert.show();
         }
         ChangeFragment(fragment);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

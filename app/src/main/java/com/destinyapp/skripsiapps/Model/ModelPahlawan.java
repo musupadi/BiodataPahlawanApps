@@ -1,7 +1,7 @@
 package com.destinyapp.skripsiapps.Model;
 
 public class ModelPahlawan {
-    private String nama,remarks,photo,detail,lahir,wafat,langitude,longitude;
+    private String nama,remarks,photo,detail,lahir,wafat,langitude,longitude,suara;
 
     public String getNama() {
         return nama;
@@ -65,5 +65,13 @@ public class ModelPahlawan {
 
     public void setLongitude(String longitude) {
         this.longitude = longitude;
+    }
+
+    public String getSuara() {
+        return suara;
+    }
+
+    public void setSuara(String suara) {
+        this.suara = suara;
     }
 }

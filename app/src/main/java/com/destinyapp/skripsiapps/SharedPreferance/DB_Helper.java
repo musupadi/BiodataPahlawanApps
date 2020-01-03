@@ -14,7 +14,7 @@ import java.util.List;
 
 public class DB_Helper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "session.db";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
     public static final String TABLE_NAME = "session";
     public static final String COLUMN_USERNME = "username";
     public static final String COLUMN_PERSON = "person";
@@ -27,6 +27,7 @@ public class DB_Helper extends SQLiteOpenHelper {
     public static final String COLUMN_WAFAT = "wafat";
     public static final String COLUMN_LANG = "langitude";
     public static final String COLUMN_LONG = "longitude";
+    public static final String COLUMN_SUARA = "suara";
 
     public DB_Helper(Context context){super(
             context,DATABASE_NAME,null,DATABASE_VERSION);
@@ -42,7 +43,8 @@ public class DB_Helper extends SQLiteOpenHelper {
                 COLUMN_LAHIR+" TEXT NOT NULL,"+
                 COLUMN_WAFAT+" TEXT NOT NULL,"+
                 COLUMN_LANG+" TEXT NOT NULL,"+
-                COLUMN_LONG+" TEXT NOT NULL);"
+                COLUMN_LONG+" TEXT NOT NULL,"+
+                COLUMN_SUARA+" TEXT NOT NULL);"
         );
         db.execSQL("CREATE TABLE "+TABLE_NAME+" (" +
                 COLUMN_USERNME+" TEXT PRIMARY KEY, "+
@@ -75,6 +77,7 @@ public class DB_Helper extends SQLiteOpenHelper {
                 pahlawan.setWafat(cursor.getString(cursor.getColumnIndex(COLUMN_WAFAT)));
                 pahlawan.setLangitude(cursor.getString(cursor.getColumnIndex(COLUMN_LANG)));
                 pahlawan.setLongitude(cursor.getString(cursor.getColumnIndex(COLUMN_LONG)));
+                pahlawan.setSuara(cursor.getString(cursor.getColumnIndex(COLUMN_SUARA)));
                 pahlawanLinkedList.add(pahlawan);
             } while (cursor.moveToNext());
         }
@@ -91,7 +94,7 @@ public class DB_Helper extends SQLiteOpenHelper {
         values.put(COLUMN_WAFAT,pahlawan.getWafat());
         values.put(COLUMN_LANG,pahlawan.getLangitude());
         values.put(COLUMN_LONG,pahlawan.getLongitude());
-
+        values.put(COLUMN_SUARA,pahlawan.getSuara());
         // insert
         db.insert(TABLE_NAME_BIODATA,null, values);
         db.close();

@@ -1,12 +1,12 @@
 package com.destinyapp.skripsiapps.Model;
 
 public class Pahlawan {
-    String nama,remarks,photo,detail,lahir,wafat,langitude,longitude;
+    String nama,remarks,photo,detail,lahir,wafat,langitude,longitude,suara;
 
     public Pahlawan() {
 
     }
-    public Pahlawan(String nama,String remarks,String photo,String detail,String lahir,String wafat,String langitude,String longitude){
+    public Pahlawan(String nama,String remarks,String photo,String detail,String lahir,String wafat,String langitude,String longitude,String suara){
         this.nama=nama;
         this.remarks=remarks;
         this.photo=photo;
@@ -15,6 +15,7 @@ public class Pahlawan {
         this.wafat=wafat;
         this.langitude=langitude;
         this.longitude=longitude;
+        this.suara=suara;
     }
 
 
@@ -81,5 +82,13 @@ public class Pahlawan {
 
     public void setLongitude(String longitude) {
         this.longitude = longitude;
+    }
+
+    public String getSuara() {
+        return suara;
+    }
+
+    public void setSuara(String suara) {
+        this.suara = suara;
     }
 }

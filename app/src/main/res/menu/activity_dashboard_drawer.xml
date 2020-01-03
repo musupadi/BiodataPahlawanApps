@@ -14,8 +14,12 @@
         <menu>
             <item
                 android:id="@+id/nav_about"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_person_black_24dp"
                 android:title="@string/about" />
+            <item
+                android:id="@+id/nav_out"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/exit" />
         </menu>
     </item>
 

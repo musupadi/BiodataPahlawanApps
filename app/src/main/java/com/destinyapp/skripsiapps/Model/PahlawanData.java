@@ -1,5 +1,7 @@
 package com.destinyapp.skripsiapps.Model;
 
+import com.destinyapp.skripsiapps.R;
+
 import java.util.ArrayList;
 
 public class PahlawanData {
@@ -11,7 +13,8 @@ public class PahlawanData {
                     "2 Mei 1889",
                     "26 April 1959",
                     "-7.806546",
-                    "110.382414"
+                    "110.382414",
+                    String.valueOf(R.raw.kihadjar)
             },
             {"Abdoel Moeis",
                     "Pahlawan Kemerdekaan Nasional",
@@ -20,7 +23,8 @@ public class PahlawanData {
                     "3 Juli 1883",
                     "17 Juni 1959",
                     "-7.806546",
-                    "110.382414"
+                    "110.382414",
+                    String.valueOf(R.raw.abdulmoeis)
             },
             {"Mohammad Husni Thamrin",
                     "Pahlawan Kemerdekaan Nasional",
@@ -29,7 +33,8 @@ public class PahlawanData {
                     "16 February 1894",
                     "11 Januari 1941",
                     "-7.806546",
-                    "110.382414"
+                    "110.382414",
+                    String.valueOf(R.raw.muhammadhusnithamrin)
             },
             {
                 "KH Samanhudi",
@@ -54,7 +59,8 @@ public class PahlawanData {
                     "8 Oktober 1868",
                     "28 Agustus 1956",
                     "-7.57239",
-                    "110.79413"
+                    "110.79413",
+                    String.valueOf(R.raw.khsamanhudi)
             },
             {
                     "Umar Said Cokroaminoto",
@@ -70,7 +76,8 @@ public class PahlawanData {
                     "16 Agustus 1882",
                     "17 Desember 1934",
                     "-6.2571826",
-                    "106.8461926"
+                    "106.8461926",
+                    String.valueOf(R.raw.umarsaidcokroaminotor)
             },
             {
                     "Ernest Douwes Dekker",
@@ -88,7 +95,8 @@ public class PahlawanData {
                     "8 Oktober 1879",
                     "28 Agustus 1950",
                     "-6.8923299",
-                    "107.6333668"
+                    "107.6333668",
+                    String.valueOf(R.raw.ernestdouwesdekker)
             },
             {
                     "Sisingamangaraja XII",
@@ -100,7 +108,8 @@ public class PahlawanData {
                     "18 Februari 1845",
                     "17 Juni 1907",
                     "-6.2046303",
-                    "106.8343437"
+                    "106.8343437",
+                    String.valueOf(R.raw.sisimangarajaxii)
             },
             {
                     "Soetomo",
@@ -114,7 +123,8 @@ public class PahlawanData {
                     "30 Juli 1888",
                     "30 Mei 1938",
                     "-7.25066",
-                    "112.73514"
+                    "112.73514",
+                    String.valueOf(R.raw.soetomo)
             },
             {
                 "Agus Salim",
@@ -130,7 +140,8 @@ public class PahlawanData {
                     "8 Oktober 1884",
                     "4 November 1954",
                     "-6.2571826",
-                    "106.8440039"
+                    "106.8440039",
+                    String.valueOf(R.raw.agussalim)
             },
             {
                     "Supriyadi",
@@ -140,7 +151,8 @@ public class PahlawanData {
                     "13 April 1923",
                     "Hilang",
                     "-6.1677568",
-                    "106.7589632"
+                    "106.7589632",
+                    String.valueOf(R.raw.supriyadi_pahlawan)
             },
             {
                     "Soekarno",
@@ -152,7 +164,8 @@ public class PahlawanData {
                     "6 Juni 1901",
                     "21 Juni 1970",
                     "-8.0845969",
-                    "112.1761273"
+                    "112.1761273",
+                    String.valueOf(R.raw.soekarno)
             },
             {
                     "Mohammad Hatta",
@@ -163,7 +176,8 @@ public class PahlawanData {
                     "12 Agustus 1902",
                     "14 Maret 1980",
                     "-6.252612",
-                    "106.7706547"
+                    "106.7706547",
+                    String.valueOf(R.raw.mohammadhatta)
             },
             {
                     "R.A Kartini",
@@ -183,7 +197,8 @@ public class PahlawanData {
                     "21 April 1879",
                     "17 September 1904",
                     "-6.8624301",
-                    "111.4064007"
+                    "111.4064007",
+                    String.valueOf(R.raw.rakartini)
             },
             {
                     "Pattimura",
@@ -197,7 +212,8 @@ public class PahlawanData {
                     "8 Juni 1783",
                     "16 Desember 1817",
                     "-6.2571826",
-                    "106.8461926"
+                    "106.8461926",
+                    String.valueOf(R.raw.pattimura)
             },
             {
                     "Agus Salim",
@@ -207,7 +223,8 @@ public class PahlawanData {
                     "8 Oktober 1884",
                     "4 November 1954",
                     "-6.2571826",
-                    "106.8461926"
+                    "106.8461926",
+                    String.valueOf(R.raw.agussalim)
             },
             {
                     "Ahmad Yani",
@@ -217,7 +234,8 @@ public class PahlawanData {
                     "19 Juni 1922",
                     "1 Oktober 1965",
                     "-6.2571826",
-                    "106.8461926"
+                    "106.8461926",
+                    String.valueOf(R.raw.ahmadyani)
             },
             {
                     "Sutan Syahrir",
@@ -227,7 +245,8 @@ public class PahlawanData {
                     "5 Maret 1909",
                     "9 April 1966",
                     "-6.2571826",
-                    "106.8461926"
+                    "106.8461926",
+                    String.valueOf(R.raw.sutansyahrir)
             },
             {
                     "Abdul Haris Nasution",
@@ -239,7 +258,8 @@ public class PahlawanData {
                     "3 Desember 1918",
                     "5 September 2000 ",
                     "-6.2571826",
-                    "106.8461926"
+                    "106.8461926",
+                    String.valueOf(R.raw.abdulharisnasution)
             },
             {
                     "Siswondo Parman",
@@ -249,7 +269,8 @@ public class PahlawanData {
                     "4 Agustus 1918",
                     "1 Oktober 1965",
                     "-6.2571826",
-                    "106.8461926"
+                    "106.8461926",
+                    String.valueOf(R.raw.siswondoparman)
             },
             {
                     "Donald Isaac Panjaitan",
@@ -264,7 +285,8 @@ public class PahlawanData {
                     "9 Juni 1925",
                     "1 Oktober 1965",
                     "-6.2571826",
-                    "106.8461926"
+                    "106.8461926",
+                    String.valueOf(R.raw.donaldisaacpanjaitan)
             }
     };
     public static ArrayList<ModelPahlawan> getListData(){
@@ -280,6 +302,7 @@ public class PahlawanData {
             modelPahlawan.setWafat(aData[5]);
             modelPahlawan.setLangitude(aData[6]);
             modelPahlawan.setLongitude(aData[7]);
+            modelPahlawan.setSuara(aData[8]);
             list.add(modelPahlawan);
         }
 

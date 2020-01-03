@@ -142,6 +142,7 @@ public class PahlawanAdapter extends RecyclerView.Adapter<PahlawanAdapter.ViewHo
                 goInput.putExtra("Wafat",pahlawan.getWafat());
                 goInput.putExtra("Lang",pahlawan.getLangitude());
                 goInput.putExtra("Long",pahlawan.getLongitude());
+                goInput.putExtra("Suara",pahlawan.getSuara());
                 mContext.startActivities(new Intent[]{goInput});
             }
         });

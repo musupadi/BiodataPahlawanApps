@@ -3,6 +3,7 @@ package com.destinyapp.skripsiapps.Pahlawan;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -55,8 +56,10 @@ public class DetailPahlawan extends Fragment {
         final String Wafat = this.getArguments().getString("Wafat").toString();
         final String Langitude = this.getArguments().getString("Lang").toString();
         final String Longitude = this.getArguments().getString("Long").toString();
+        final String Suara = this.getArguments().getString("Suara").toString();
         //Done
-
+        final MediaPlayer SuaraMe = MediaPlayer.create(getActivity(),Integer.parseInt(Suara));
+        SuaraMe.start();
         //Deklarasi Variabel
         photo = (ImageView)view.findViewById(R.id.ivPhoto);
         nama = (TextView)view.findViewById(R.id.tvNama);
@@ -89,7 +92,7 @@ public class DetailPahlawan extends Fragment {
                     dbHelper.deletePahlawanRecord(Nama,getActivity());
                     Favorite.setText("Favorit");
                 }else{
-                    Pahlawan pahlawan = new Pahlawan(Nama,Remarks,Photo,Detail,Lahir,Wafat,Langitude,Longitude);
+                    Pahlawan pahlawan = new Pahlawan(Nama,Remarks,Photo,Detail,Lahir,Wafat,Langitude,Longitude,Suara);
                     dbHelper.FavoritePahlawan(pahlawan);
                     Favorite.setText("Terfavorit");
                 }
